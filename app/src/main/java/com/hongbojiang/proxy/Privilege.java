@@ -2,6 +2,7 @@ package com.hongbojiang.proxy;
 
 import com.fasterxml.jackson.annotation.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Privilege {
     private Long id;
     private Long fee;

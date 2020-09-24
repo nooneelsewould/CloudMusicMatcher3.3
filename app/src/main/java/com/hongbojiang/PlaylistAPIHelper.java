@@ -41,11 +41,12 @@ public class PlaylistAPIHelper {
         if (!trackIDs.isEmpty()) {
             group = Lists.partition(trackIDs, 800);
             for (List<TrackID> item : group) {
-                String data = "";
+                StringBuilder dataBuilder = new StringBuilder();
                 for (TrackID id : item) {
-                    data += id.getID();
-                    data += ",";
+                    dataBuilder.append(id.getID());
+                    dataBuilder.append(",");
                 }
+                String data = dataBuilder.toString();
                 if (data.endsWith(",")) {
                     data = data.substring(0, data.length() - 1);
                 }

@@ -2,6 +2,7 @@ package com.hongbojiang.proxy;
 
 import com.fasterxml.jackson.annotation.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class H {
     private Long br;
     private Long fid;

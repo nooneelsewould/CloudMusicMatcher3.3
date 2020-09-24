@@ -3,6 +3,7 @@ package com.hongbojiang.proxy;
 import com.fasterxml.jackson.annotation.*;
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class PlaylistDetail {
     private Long code;
     private Object relatedVideos;

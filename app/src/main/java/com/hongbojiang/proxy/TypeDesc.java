@@ -3,6 +3,7 @@ package com.hongbojiang.proxy;
 import java.io.IOException;
 import com.fasterxml.jackson.annotation.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public enum TypeDesc {
     EMPTY, M_V;
 
