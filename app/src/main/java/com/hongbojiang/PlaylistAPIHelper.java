@@ -1,6 +1,5 @@
 package com.hongbojiang;
 
-import com.hongbojiang.proxy.Ar;
 import com.hongbojiang.proxy.Converter;
 import com.hongbojiang.proxy.PlaylistDetail;
 import com.hongbojiang.proxy.Song;
